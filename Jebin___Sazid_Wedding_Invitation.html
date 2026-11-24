@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cordial Invitation | Jebin Sultana & Sazid Sahidur Rahman</title>
+  <meta name="description" content="Assalamu Alaikum! With the grace of Almighty Allah, Sekendar Ali, Asiya Begum & Asif Iqbal cordially invite you to the Marriage Ceremony of Jebin Sultana with Sazid Sahidur Rahman on Sunday, 17 January 2027.">
+
+  <!-- Google Fonts: Cinzel Decorative, Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            olive: {
+              50: '#F5F7F5',
+              100: '#E6ECE6',
+              200: '#CCD8CD',
+              300: '#A5B9A7',
+              400: '#7B957E',
+              500: '#58745B',
+              600: '#455C48',
+              700: '#3D523E',
+              800: '#2C3E2D',
+              900: '#212F22',
+              950: '#141D15',
+            },
+            cream: {
+              50: '#FDFBF8',
+              100: '#FAF7F2',
+              200: '#F2ECE1',
+              300: '#E5DAC6',
+              400: '#D4C2A3',
+            },
+            gold: {
+              200: '#EFE0BE',
+              300: '#E2C992',
+              400: '#D3B26F',
+              500: '#C5A059',
+              600: '#A6823E',
+              700: '#84642C',
+            }
+          },
+          fontFamily: {
+            display: ['"Cinzel Decorative"', 'Georgia', 'serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'card': '0 14px 40px -8px rgba(44, 62, 45, 0.12), 0 4px 16px -2px rgba(197, 160, 89, 0.10)',
+            'seal': '0 12px 28px rgba(20, 29, 21, 0.55), inset 0 2px 5px rgba(255, 244, 214, 0.65), inset 0 -4px 8px rgba(110, 78, 24, 0.7)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF7F2;
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(61, 82, 62, 0.07) 0%, transparent 45%),
+        radial-gradient(circle at 88% 32%, rgba(197, 160, 89, 0.09) 0%, transparent 45%),
+        radial-gradient(circle at 25% 85%, rgba(44, 62, 45, 0.06) 0%, transparent 50%);
+      color: #212F22;
+      overflow-x: hidden;
+    }
+
+    /* Gold foil gradient text */
+    .gold-foil-text {
+      background: linear-gradient(135deg, #9A742E 0%, #D9BA78 35%, #C5A059 55%, #F2DCAA 75%, #9A742E 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: goldShimmer 6s linear infinite;
+    }
+
+    @keyframes goldShimmer {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    /* Wax seal gentle breathing & shimmer */
+    @keyframes sealPulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 12px 28px rgba(20, 29, 21, 0.55), 0 0 0 0 rgba(197, 160, 89, 0.5); }
+      50% { transform: scale(1.045); box-shadow: 0 16px 34px rgba(20, 29, 21, 0.65), 0 0 0 14px rgba(197, 160, 89, 0); }
+    }
+    .wax-seal-btn {
+      background: radial-gradient(circle at 32% 28%, #E5CA8E 0%, #C5A059 48%, #967230 88%, #7A5A21 100%);
+      animation: sealPulse 2.8s infinite ease-in-out;
+    }
+
+    /* Envelope Overlay Transitions */
+    #envelope-overlay {
+      transition: opacity 0.95s cubic-bezier(0.22, 1, 0.36, 1), transform 1.05s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    #envelope-overlay.envelope-opened {
+      opacity: 0;
+      transform: scale(1.06) translateY(-24px);
+      pointer-events: none;
+    }
+
+    /* Scroll reveal animations */
+    .reveal-section {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Decorative botanical double-border card */
+    .botanical-card {
+      position: relative;
+      background: rgba(253, 251, 248, 0.94);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(197, 160, 89, 0.42);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .botanical-card::after {
+      content: "";
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(61, 82, 62, 0.22);
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    /* Ornamental divider */
+    .gold-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .gold-divider::before,
+    .gold-divider::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      max-width: 110px;
+      background: linear-gradient(90deg, transparent, #C5A059, transparent);
+    }
+
+    /* Flip/Tick animation for countdown numbers */
+    @keyframes tickPop {
+      0% { transform: scale(1.14); color: #F2DCAA; }
+      100% { transform: scale(1); }
+    }
+    .tick-animate {
+      animation: tickPop 0.35s ease-out;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-olive-200 selection:text-olive-900 pb-24 sm:pb-16">
+
+  <!-- Ambient Floating Botanical Petals & Celebratory Confetti Canvas -->
+  <canvas id="particle-canvas" class="fixed inset-0 pointer-events-none z-50"></canvas>
+
+  <!-- ==================== 1. INTERACTIVE WAX-SEAL ENVELOPE OVERLAY ==================== -->
+  <div id="envelope-overlay" role="dialog" aria-modal="true" aria-label="Wedding Invitation Envelope"
+       class="fixed inset-0 z-40 flex flex-col items-center justify-center p-5 bg-gradient-to-br from-olive-900 via-olive-800 to-olive-950 text-cream-100 overflow-hidden">
+
+    <!-- Subtle Decorative Envelope Flap Lines (SVG) -->
+    <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" preserveAspectRatio="none" viewBox="0 0 1000 1000" fill="none">
+      <path d="M0 0 L500 520 L1000 0" stroke="#C5A059" stroke-width="2"/>
+      <path d="M0 1000 L420 560 M1000 1000 L580 560" stroke="#C5A059" stroke-width="1.5"/>
+      <rect x="24" y="24" width="952" height="952" rx="28" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="8 8"/>
+    </svg>
+
+    <!-- Corner Botanical Gold Flourish -->
+    <svg class="absolute top-4 left-4 w-28 h-28 sm:w-40 sm:h-40 pointer-events-none opacity-45" viewBox="0 0 200 200" fill="none">
+      <path d="M10 160 C45 120, 85 75, 160 15" stroke="#C5A059" stroke-width="1.5"/>
+      <ellipse cx="55" cy="112" rx="14" ry="5" transform="rotate(-40 55 112)" fill="#C5A059" fill-opacity="0.55"/>
+      <ellipse cx="95" cy="74" rx="15" ry="5" transform="rotate(-42 95 74)" fill="#C5A059" fill-opacity="0.65"/>
+      <ellipse cx="130" cy="40" rx="12" ry="4" transform="rotate(-38 130 40)" fill="#E2C992" fill-opacity="0.7"/>
+      <circle cx="72" cy="52" r="3" fill="#E2C992"/>
+      <circle cx="115" cy="95" r="2.5" fill="#C5A059"/>
+    </svg>
+    <svg class="absolute bottom-4 right-4 w-28 h-28 sm:w-40 sm:h-40 pointer-events-none opacity-45 rotate-180" viewBox="0 0 200 200" fill="none">
+      <path d="M10 160 C45 120, 85 75, 160 15" stroke="#C5A059" stroke-width="1.5"/>
+      <ellipse cx="55" cy="112" rx="14" ry="5" transform="rotate(-40 55 112)" fill="#C5A059" fill-opacity="0.55"/>
+      <ellipse cx="95" cy="74" rx="15" ry="5" transform="rotate(-42 95 74)" fill="#C5A059" fill-opacity="0.65"/>
+      <ellipse cx="130" cy="40" rx="12" ry="4" transform="rotate(-38 130 40)" fill="#E2C992" fill-opacity="0.7"/>
+      <circle cx="72" cy="52" r="3" fill="#E2C992"/>
+    </svg>
+
+    <!-- Envelope Centerpiece Card -->
+    <div class="relative z-10 max-w-md w-full text-center space-y-6 px-6 py-10 rounded-3xl bg-olive-900/75 backdrop-blur-md border border-gold-500/45 shadow-2xl">
+      <div class="space-y-1.5">
+        <p class="text-[11px] sm:text-xs font-semibold tracking-[0.28em] uppercase text-gold-300">
+          In the Name of Almighty Allah
+        </p>
+        <div class="gold-divider">
+          <span class="w-1.5 h-1.5 rotate-45 bg-gold-400"></span>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <p class="font-serif italic text-lg sm:text-xl text-cream-200">You’re Cordially Invited</p>
+        <h1 class="font-display text-3xl sm:text-4xl font-bold tracking-wide gold-foil-text leading-snug">
+          Jebin &amp; Sazid
+        </h1>
+        <p class="text-xs sm:text-sm tracking-[0.2em] uppercase text-gold-200/90 pt-1">
+          Sunday • 17 January 2027
+        </p>
+      </div>
+
+      <!-- Interactive Brushed Gold Wax Seal Button -->
+      <div class="py-3 flex flex-col items-center justify-center">
+        <button type="button" onclick="openEnvelope()" aria-label="Tap wax seal to open wedding invitation"
+          class="wax-seal-btn relative w-28 h-28 sm:w-32 sm:h-32 rounded-full flex flex-col items-center justify-center text-olive-950 border-4 border-gold-300/70 shadow-seal cursor-pointer focus:outline-none focus:ring-4 focus:ring-gold-400/50 transition-transform active:scale-95">
+          <!-- Inner Embossed Ring -->
+          <span class="absolute inset-2 rounded-full border border-olive-900/35 pointer-events-none"></span>
+          <span class="font-display text-2xl sm:text-3xl font-bold tracking-tight text-olive-950 drop-shadow-sm">
+            J &amp; S
+          </span>
+          <span class="text-[9px] font-bold uppercase tracking-[0.2em] text-olive-900 mt-0.5">
+            Tap Seal
+          </span>
+        </button>
+
+        <button type="button" onclick="openEnvelope()"
+          class="mt-5 inline-flex items-center gap-2 text-xs sm:text-sm font-medium tracking-[0.18em] uppercase text-gold-300 hover:text-cream-50 transition-colors cursor-pointer">
+          <span>Tap to Open Invitation</span>
+          <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+      </div>
+
+      <p class="font-serif italic text-sm text-cream-200/80">
+        From the Bride’s Family • Ghoga, Nalbari, Assam
+      </p>
+    </div>
+  </div>
+
+  <!-- ==================== STICKY TOP NAVIGATION & AMBIENT CHIME TOGGLE ==================== -->
+  <header class="sticky top-0 z-30 bg-cream-100/90 backdrop-blur-md border-b border-gold-500/25 px-4 py-3">
+    <div class="max-w-2xl mx-auto flex items-center justify-between gap-2">
+      <a href="#top" class="flex items-center gap-2 group">
+        <span class="w-2.5 h-2.5 rotate-45 bg-gold-500 group-hover:scale-110 transition-transform"></span>
+        <span class="font-serif italic text-xl font-bold text-olive-800 tracking-wide">Jebin &amp; Sazid</span>
+      </a>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <nav aria-label="Quick Section Links" class="hidden sm:flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-olive-700">
+          <a href="#section-invitation" class="hover:text-gold-600 transition-colors">Invitation</a>
+          <a href="#section-venue" class="hover:text-gold-600 transition-colors">Venue</a>
+          <a href="#section-blessings" class="hover:text-gold-600 transition-colors">Blessings</a>
+        </nav>
+
+        <!-- Optional Web Audio Soft Harp/Chime Melody Toggle -->
+        <button type="button" id="audio-toggle-btn" onclick="toggleAmbientChimes()" aria-pressed="false"
+          title="Toggle Celebratory Chime Melody"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-olive-800 hover:bg-olive-700 text-cream-100 text-xs font-medium border border-gold-500/40 shadow-sm transition-all cursor-pointer">
+          <span id="audio-icon-off" class="flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"/>
+            </svg>
+            <span>Chimes Off</span>
+          </span>
+          <span id="audio-icon-on" class="hidden items-center gap-1.5 text-gold-300">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-ping"></span>
+            <span>Chimes On</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN INVITATION CONTENT ==================== -->
+  <main id="top" class="max-w-2xl mx-auto px-4 pt-6 sm:pt-10 space-y-8">
+
+    <!-- ==================== 2. HERO & BRIDE'S FAMILY INVITATION CARD ==================== -->
+    <section id="section-invitation" class="reveal-section botanical-card rounded-3xl p-6 sm:p-11 shadow-card overflow-hidden">
+
+      <!-- Top-Left Olive & Antique Gold Botanical Illustration -->
+      <svg class="absolute top-0 left-0 w-36 h-36 sm:w-48 sm:h-48 pointer-events-none opacity-85" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+        <path d="M-5 155 C38 122, 78 75, 142 18" stroke="#3D523E" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M16 184 C48 148, 98 106, 170 54" stroke="#58745B" stroke-width="1.3" stroke-linecap="round"/>
+        <path d="M0 98 C30 72, 56 46, 88 4" stroke="#2C3E2D" stroke-width="1.4" stroke-linecap="round"/>
+        <!-- Olive Leaves -->
+        <ellipse cx="46" cy="114" rx="15" ry="5" transform="rotate(-38 46 114)" fill="#3D523E" fill-opacity="0.8"/>
+        <ellipse cx="80" cy="85" rx="16" ry="5" transform="rotate(-42 80 85)" fill="#2C3E2D" fill-opacity="0.85"/>
+        <ellipse cx="114" cy="52" rx="14" ry="4.5" transform="rotate(-40 114 52)" fill="#58745B" fill-opacity="0.85"/>
+        <ellipse cx="66" cy="130" rx="14" ry="4.5" transform="rotate(15 66 130)" fill="#58745B" fill-opacity="0.72"/>
+        <ellipse cx="105" cy="96" rx="15" ry="4.5" transform="rotate(10 105 96)" fill="#3D523E" fill-opacity="0.68"/>
+        <!-- Gold Berries & Blossoms -->
+        <circle cx="94" cy="36" r="3.2" fill="#C5A059"/>
+        <circle cx="130" cy="33" r="2.6" fill="#D3B26F"/>
+        <circle cx="38" cy="146" r="3" fill="#C5A059"/>
+        <g transform="translate(26, 28)">
+          <circle cx="0" cy="-9" r="7" fill="#E8D7B9"/>
+          <circle cx="8.5" cy="-2.8" r="7" fill="#DFC8A0"/>
+          <circle cx="5.3" cy="7.3" r="7" fill="#E8D7B9"/>
+          <circle cx="-5.3" cy="7.3" r="7" fill="#DFC8A0"/>
+          <circle cx="-8.5" cy="-2.8" r="7" fill="#E8D7B9"/>
+          <circle cx="0" cy="0" r="4.5" fill="#C5A059"/>
+        </g>
+        <g transform="translate(70, 22) scale(0.76)">
+          <circle cx="0" cy="-9" r="7" fill="#F2ECE1"/>
+          <circle cx="8.5" cy="-2.8" r="7" fill="#E5DAC6"/>
+          <circle cx="5.3" cy="7.3" r="7" fill="#F2ECE1"/>
+          <circle cx="-5.3" cy="7.3" r="7" fill="#E5DAC6"/>
+          <circle cx="-8.5" cy="-2.8" r="7" fill="#F2ECE1"/>
+          <circle cx="0" cy="0" r="4" fill="#A6823E"/>
+        </g>
+      </svg>
+
+      <!-- Bottom-Right Botanical Corner -->
+      <svg class="absolute bottom-0 right-0 w-36 h-36 sm:w-48 sm:h-48 pointer-events-none opacity-85 rotate-180" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+        <path d="M-5 155 C38 122, 78 75, 142 18" stroke="#3D523E" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M16 184 C48 148, 98 106, 170 54" stroke="#58745B" stroke-width="1.3" stroke-linecap="round"/>
+        <ellipse cx="46" cy="114" rx="15" ry="5" transform="rotate(-38 46 114)" fill="#3D523E" fill-opacity="0.8"/>
+        <ellipse cx="80" cy="85" rx="16" ry="5" transform="rotate(-42 80 85)" fill="#2C3E2D" fill-opacity="0.85"/>
+        <ellipse cx="114" cy="52" rx="14" ry="4.5" transform="rotate(-40 114 52)" fill="#58745B" fill-opacity="0.85"/>
+        <circle cx="94" cy="36" r="3.2" fill="#C5A059"/>
+        <g transform="translate(26, 28)">
+          <circle cx="0" cy="-9" r="7" fill="#E8D7B9"/>
+          <circle cx="8.5" cy="-2.8" r="7" fill="#DFC8A0"/>
+          <circle cx="5.3" cy="7.3" r="7" fill="#E8D7B9"/>
+          <circle cx="-5.3" cy="7.3" r="7" fill="#DFC8A0"/>
+          <circle cx="-8.5" cy="-2.8" r="7" fill="#E8D7B9"/>
+          <circle cx="0" cy="0" r="4.5" fill="#C5A059"/>
+        </g>
+      </svg>
+
+      <!-- Card Inner Content -->
+      <div class="relative z-10 text-center space-y-6 pt-6 sm:pt-3">
+        <!-- Bismillah & Assalamu Alaikum -->
+        <div class="space-y-2">
+          <p class="text-[11px] sm:text-xs font-semibold tracking-[0.22em] uppercase text-olive-700">
+            In the Name of Almighty, Most Beneficent, Most Merciful
+          </p>
+          <div class="gold-divider">
+            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+            </svg>
+          </div>
+          <div class="pt-1">
+            <span class="inline-block px-4 py-1 rounded-full bg-olive-800 text-gold-300 font-serif italic text-base sm:text-lg tracking-wide border border-gold-500/40 shadow-sm">
+              Assalamu Alaikum
+            </span>
+          </div>
+        </div>
+
+        <!-- Cordial Invitation Heading -->
+        <div>
+          <h2 class="font-serif italic text-4xl sm:text-6xl font-semibold text-olive-800 tracking-tight leading-none">
+            Cordial Invitation
+          </h2>
+          <div class="w-44 sm:w-56 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-3"></div>
+        </div>
+
+        <!-- Heartfelt Bride's Family Invitation Message -->
+        <p class="font-serif text-lg sm:text-xl text-olive-800 leading-relaxed max-w-xl mx-auto px-1">
+          With the grace of Almighty Allah, we joyfully invite you and your family to grace the auspicious occasion of the
+          <span class="font-semibold text-olive-950">Marriage Ceremony</span>
+          of our beloved daughter &amp; sister
+        </p>
+
+        <!-- Couple Showcase Box -->
+        <div class="py-5 px-5 sm:px-8 rounded-2xl bg-gradient-to-b from-cream-100 to-olive-50/75 border border-gold-500/40 max-w-md mx-auto shadow-sm">
+          <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-gold-600 block mb-1">The Bride</span>
+          <p class="font-display text-2xl sm:text-3xl font-bold gold-foil-text tracking-wide">
+            Jebin Sultana
+          </p>
+
+          <div class="my-3 flex items-center justify-center gap-3">
+            <span class="h-px w-12 bg-gold-500/60"></span>
+            <span class="inline-block px-4 py-0.5 rounded-full bg-olive-800 text-cream-50 font-serif italic text-sm tracking-wider shadow-sm">
+              with
+            </span>
+            <span class="h-px w-12 bg-gold-500/60"></span>
+          </div>
+
+          <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-gold-600 block mb-1">The Groom</span>
+          <p class="font-display text-2xl sm:text-3xl font-bold text-olive-900 tracking-wide">
+            Sazid Sahidur Rahman
+          </p>
+        </div>
+
+        <!-- Wedding Date Display -->
+        <div class="pt-1">
+          <p class="font-serif italic text-base text-olive-600 mb-2">on the auspicious day of</p>
+          <div class="inline-flex items-center justify-center gap-3 sm:gap-6 px-6 py-3.5 rounded-2xl border-y-2 border-gold-500/60 bg-cream-50/90 shadow-sm">
+            <span class="text-xs sm:text-sm font-bold tracking-[0.22em] uppercase text-olive-800 border-y border-olive-400/50 py-1 px-2.5">
+              Sunday
+            </span>
+            <div class="text-center leading-none">
+              <span class="block font-serif text-4xl sm:text-5xl font-bold text-gold-600">17</span>
+              <span class="block text-xs font-bold tracking-widest text-olive-800 mt-1">2027</span>
+            </div>
+            <span class="text-xs sm:text-sm font-bold tracking-[0.22em] uppercase text-olive-800 border-y border-olive-400/50 py-1 px-2.5">
+              January
+            </span>
+          </div>
+        </div>
+
+        <!-- Personal Note from the Bride & Bride's Family Hosts -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-left">
+          <!-- Personal Bride's Note -->
+          <div class="rounded-2xl p-5 bg-gradient-to-br from-olive-800 to-olive-900 text-cream-100 border border-gold-500/45 shadow-md flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2.5">
+                <svg class="w-4 h-4 text-gold-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-gold-300">A Personal Note</span>
+              </div>
+              <p class="font-serif italic text-base sm:text-lg leading-relaxed text-cream-100">
+                “Along with my family, I warmly invite you and your loved ones to share in the joy and blessings of my wedding day.”
+              </p>
+            </div>
+            <p class="font-serif italic text-xl font-semibold text-gold-300 text-right mt-4 pt-2 border-t border-gold-500/25">
+              With best regards, Jebin
+            </p>
+          </div>
+
+          <!-- Bride's Family Hosts -->
+          <div class="rounded-2xl p-5 bg-cream-100/95 border border-gold-500/40 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-2 h-2 rotate-45 bg-gold-500"></span>
+                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-olive-800">Cordially Hosted By</span>
+              </div>
+              <ul class="space-y-2.5 text-sm text-olive-900">
+                <li class="flex items-center justify-between border-b border-olive-200/80 pb-1.5">
+                  <span class="font-semibold text-olive-950">Sekendar Ali</span>
+                  <span class="text-xs font-medium bg-olive-100 text-olive-800 px-2.5 py-0.5 rounded-full">Father</span>
+                </li>
+                <li class="flex items-center justify-between border-b border-olive-200/80 pb-1.5">
+                  <span class="font-semibold text-olive-950">Asiya Begum</span>
+                  <span class="text-xs font-medium bg-olive-100 text-olive-800 px-2.5 py-0.5 rounded-full">Mother</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="font-semibold text-olive-950">Asif Iqbal</span>
+                  <span class="text-xs font-medium bg-olive-100 text-olive-800 px-2.5 py-0.5 rounded-full">Younger Brother</span>
+                </li>
+              </ul>
+            </div>
+            <p class="text-xs text-olive-600 italic mt-3 text-right">
+              &amp; All Relatives &amp; Well-Wishers
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. LIVE ANIMATED COUNTDOWN & SAVE THE DATE ==================== -->
+    <section aria-label="Wedding Countdown" class="reveal-section botanical-card rounded-3xl p-6 sm:p-8 shadow-card text-center">
+      <span class="text-xs font-bold tracking-[0.22em] uppercase text-gold-600">Counting Down To The Celebration</span>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-olive-900 mt-1 mb-5">Sunday, 17 January 2027</h2>
+
+      <div class="grid grid-cols-4 gap-2.5 sm:gap-4 max-w-md mx-auto mb-6">
+        <div class="rounded-2xl bg-olive-800 text-cream-100 p-3 sm:p-4 shadow-md border border-gold-500/35">
+          <span id="cd-days" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-300 tabular-nums">00</span>
+          <span class="text-[10px] sm:text-xs uppercase tracking-wider text-olive-200 mt-1 block">Days</span>
+        </div>
+        <div class="rounded-2xl bg-olive-800 text-cream-100 p-3 sm:p-4 shadow-md border border-gold-500/35">
+          <span id="cd-hours" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-300 tabular-nums">00</span>
+          <span class="text-[10px] sm:text-xs uppercase tracking-wider text-olive-200 mt-1 block">Hours</span>
+        </div>
+        <div class="rounded-2xl bg-olive-800 text-cream-100 p-3 sm:p-4 shadow-md border border-gold-500/35">
+          <span id="cd-minutes" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-300 tabular-nums">00</span>
+          <span class="text-[10px] sm:text-xs uppercase tracking-wider text-olive-200 mt-1 block">Mins</span>
+        </div>
+        <div class="rounded-2xl bg-olive-800 text-cream-100 p-3 sm:p-4 shadow-md border border-gold-500/35">
+          <span id="cd-seconds" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-300 tabular-nums">00</span>
+          <span class="text-[10px] sm:text-xs uppercase tracking-wider text-olive-200 mt-1 block">Secs</span>
+        </div>
+      </div>
+
+      <button type="button" onclick="downloadICS()"
+        class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-gradient-to-r from-olive-800 to-olive-900 hover:from-olive-700 hover:to-olive-800 text-cream-100 font-semibold text-sm border border-gold-400/50 shadow-md transition-all active:scale-95 cursor-pointer">
+        <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        <span>Save the Date (.ics Calendar)</span>
+      </button>
+    </section>
+
+    <!-- ==================== 4. VENUE, INTERACTIVE MAP PREVIEW & FAMILY CONTACTS ==================== -->
+    <section id="section-venue" aria-label="Wedding Venue and Contact Details" class="reveal-section botanical-card rounded-3xl p-6 sm:p-8 shadow-card">
+      <div class="text-center mb-6">
+        <div class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-olive-100 text-olive-800 border border-gold-500/40 mb-2">
+          <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </div>
+        <span class="block text-xs font-bold tracking-[0.22em] uppercase text-gold-600">Where To Join Us</span>
+        <h2 class="font-serif text-3xl font-bold text-olive-900 mt-0.5">Wedding Venue &amp; Directions</h2>
+      </div>
+
+      <!-- Interactive Stylised Map Preview + Address Card -->
+      <div class="rounded-2xl overflow-hidden border border-gold-500/35 bg-cream-100 shadow-sm">
+        <!-- Decorative Stylised Route Preview Header -->
+        <a href="https://www.google.com/maps/search/?api=1&query=Ghoga+Chowk,+Guwahati-Hajo-Daulasal+Rd,+Nalbari,+Assam"
+           target="_blank" rel="noopener noreferrer"
+           class="group relative block h-36 sm:h-44 bg-gradient-to-br from-olive-800 via-olive-700 to-olive-900 overflow-hidden">
+          <!-- Stylised Map Grid & Route Path SVG -->
+          <svg class="absolute inset-0 w-full h-full opacity-35 group-hover:scale-105 transition-transform duration-500" viewBox="0 0 400 180" fill="none" preserveAspectRatio="none">
+            <path d="M0 40 H400 M0 90 H400 M0 140 H400 M80 0 V180 M200 0 V180 M320 0 V180" stroke="#FAF7F2" stroke-width="0.6" stroke-dasharray="4 4"/>
+            <path d="M-10 150 Q 110 130, 200 90 T 410 30" stroke="#C5A059" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+          <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+            <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-gold-500 text-olive-950 shadow-lg mb-2 group-hover:-translate-y-1 transition-transform">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </span>
+            <p class="font-serif text-lg sm:text-xl font-bold text-cream-100">Ghoga Chowk • Nalbari, Assam</p>
+            <p class="text-xs text-gold-300 font-medium">Guwahati–Hajo–Daulasal Road</p>
+          </div>
+        </a>
+
+        <!-- Detailed Address & Google Maps CTA -->
+        <div class="p-5 sm:p-6 space-y-4">
+          <div class="flex items-start gap-3.5">
+            <div class="mt-1 p-2.5 rounded-xl bg-olive-800 text-gold-300 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-olive-950">Own Residence</h3>
+              <p class="text-sm sm:text-base text-olive-800 mt-1 leading-relaxed">
+                <span class="font-semibold text-olive-950">Village:</span> Ghoga<br>
+                <span class="font-semibold text-olive-950">Bus-Stand:</span> Ghoga Chowk (Guwahati–Hajo–Daulasal Rd.)<br>
+                <span class="font-semibold text-olive-950">District:</span> Nalbari, Assam
+              </p>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Ghoga+Chowk,+Guwahati-Hajo-Daulasal+Rd,+Nalbari,+Assam"
+             target="_blank" rel="noopener noreferrer"
+             class="w-full inline-flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-xl bg-olive-800 hover:bg-olive-900 text-cream-100 font-semibold text-sm shadow-sm transition-all active:scale-[0.99]">
+            <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+            </svg>
+            <span>Open in Google Maps</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- One-Tap Call & WhatsApp Family Contacts -->
+      <div class="mt-6">
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-olive-700 text-center mb-3">
+          Bride’s Family Contacts (Call or WhatsApp)
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <!-- Contact 1: +91 60025 62217 -->
+          <div class="flex items-center justify-between p-3 rounded-xl bg-cream-50 border border-gold-500/40 shadow-sm">
+            <div class="pl-1">
+              <span class="block text-[10px] font-bold uppercase tracking-wider text-olive-600">Contact 1</span>
+              <span class="font-semibold text-sm text-olive-950">+91 60025 62217</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <a href="tel:+916002562217" aria-label="Call +91 60025 62217"
+                 class="p-2.5 rounded-lg bg-olive-800 hover:bg-olive-700 text-gold-300 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/916002562217" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +91 60025 62217"
+                 class="p-2.5 rounded-lg bg-[#256D47] hover:bg-[#1E593A] text-white transition-colors">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact 2: +91 60028 09755 -->
+          <div class="flex items-center justify-between p-3 rounded-xl bg-cream-50 border border-gold-500/40 shadow-sm">
+            <div class="pl-1">
+              <span class="block text-[10px] font-bold uppercase tracking-wider text-olive-600">Contact 2</span>
+              <span class="font-semibold text-sm text-olive-950">+91 60028 09755</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <a href="tel:+916002809755" aria-label="Call +91 60028 09755"
+                 class="p-2.5 rounded-lg bg-olive-800 hover:bg-olive-700 text-gold-300 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/916002809755" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +91 60028 09755"
+                 class="p-2.5 rounded-lg bg-[#256D47] hover:bg-[#1E593A] text-white transition-colors">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. INTERACTIVE WALL OF BLESSINGS / GUESTBOOK ==================== -->
+    <section id="section-blessings" aria-label="Wall of Blessings" class="reveal-section botanical-card rounded-3xl p-6 sm:p-8 shadow-card">
+      <div class="text-center mb-6">
+        <span class="text-xs font-bold tracking-[0.22em] uppercase text-gold-600">Prayers &amp; Duas For The Couple</span>
+        <h2 class="font-serif text-3xl font-bold text-olive-900 mt-1">Send Your Blessings</h2>
+        <p class="text-sm text-olive-700 max-w-md mx-auto mt-1">
+          Leave a heartfelt prayer or blessing for Jebin &amp; Sazid, or send your wishes directly to the family on WhatsApp.
+        </p>
+      </div>
+
+      <!-- Blessing Submission Form -->
+      <form id="blessing-form" onsubmit="handleBlessingSubmit(event)" class="space-y-3.5 bg-cream-100/90 p-5 rounded-2xl border border-olive-200">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="guest-name" class="block text-xs font-semibold text-olive-800 mb-1">Your Name</label>
+            <input type="text" id="guest-name" required maxlength="60" placeholder="e.g., Rahman Family"
+              class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-olive-300/80 text-sm text-olive-950 placeholder-olive-400 focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20">
+          </div>
+          <div>
+            <label for="guest-relation" class="block text-xs font-semibold text-olive-800 mb-1">Relation / City (Optional)</label>
+            <input type="text" id="guest-relation" maxlength="50" placeholder="e.g., Family Friend, Guwahati"
+              class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-olive-300/80 text-sm text-olive-950 placeholder-olive-400 focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20">
+          </div>
+        </div>
+
+        <div>
+          <label for="guest-wish" class="block text-xs font-semibold text-olive-800 mb-1">Your Blessing / Dua</label>
+          <textarea id="guest-wish" rows="3" required maxlength="280"
+            placeholder="Barakallahu Lakuma! Wishing Jebin & Sazid a lifetime of love, barakah, and happiness..."
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-olive-300/80 text-sm text-olive-950 placeholder-olive-400 focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20"></textarea>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-2.5 pt-1">
+          <button type="submit"
+            class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-olive-800 hover:bg-olive-900 text-cream-100 font-semibold text-sm shadow-sm transition-all active:scale-95 cursor-pointer">
+            <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+            </svg>
+            <span>Post to Wall of Blessings</span>
+          </button>
+
+          <button type="button" onclick="sendWishToFamilyWhatsApp()"
+            class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#256D47] hover:bg-[#1E593A] text-white font-semibold text-sm shadow-sm transition-all active:scale-95 cursor-pointer">
+            <span>Send via WhatsApp</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Live Wall of Blessings Feed -->
+      <div class="mt-6 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold uppercase tracking-wider text-olive-700">Wall of Blessings</span>
+          <span id="blessing-count" class="text-xs font-medium text-gold-700 bg-gold-200/50 px-2.5 py-0.5 rounded-full">1 Blessing</span>
+        </div>
+
+        <div id="blessings-list" class="space-y-3 max-h-80 overflow-y-auto pr-1">
+          <!-- Populated dynamically via JS with pre-seeded welcome blessing + localStorage entries -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. QUICK GUEST ACTIONS: SHARE INVITATION ==================== -->
+    <section aria-label="Share Invitation" class="reveal-section botanical-card rounded-3xl p-6 sm:p-8 shadow-card text-center">
+      <span class="text-xs font-bold tracking-[0.22em] uppercase text-gold-600">Invite Family &amp; Friends</span>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-olive-900 mt-1 mb-2">Share This Invitation</h2>
+      <p class="text-sm text-olive-700 max-w-md mx-auto mb-6">
+        Forward this English wedding invitation card to relatives and friends via WhatsApp or copy the complete details.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-lg mx-auto">
+        <button type="button" onclick="shareWhatsApp()"
+          class="flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-xl bg-[#256D47] hover:bg-[#1E593A] text-white font-semibold text-sm shadow-sm transition-all active:scale-95 cursor-pointer">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+          </svg>
+          <span>Share on WhatsApp</span>
+        </button>
+
+        <button type="button" onclick="copyInvitation()"
+          class="flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-xl bg-cream-50 hover:bg-olive-100 text-olive-900 font-semibold text-sm border border-gold-500/50 shadow-sm transition-all active:scale-95 cursor-pointer">
+          <svg class="w-4 h-4 text-gold-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>
+          </svg>
+          <span>Copy Invitation Text</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Elegant Footer -->
+    <footer class="text-center pt-4 pb-6 space-y-2 text-olive-700">
+      <div class="gold-divider">
+        <span class="font-display text-base font-bold text-olive-900">Jebin &amp; Sazid</span>
+      </div>
+      <p class="text-xs tracking-wider uppercase text-olive-600">
+        Hosted with love by Sekendar Ali, Asiya Begum &amp; Asif Iqbal • 17 January 2027
+      </p>
+    </footer>
+  </main>
+
+  <!-- Floating Mobile Bottom Quick-Action Bar -->
+  <div class="fixed bottom-0 inset-x-0 z-30 sm:hidden bg-cream-100/95 backdrop-blur-md border-t border-gold-500/30 px-3 py-2.5 flex items-center justify-around gap-2 shadow-lg">
+    <a href="#section-venue" class="flex-1 py-2 px-2 rounded-full bg-olive-100 text-olive-900 text-xs font-semibold text-center">
+      Venue &amp; Map
+    </a>
+    <a href="#section-blessings" class="flex-1 py-2 px-2 rounded-full bg-olive-100 text-olive-900 text-xs font-semibold text-center">
+      Send Blessing
+    </a>
+    <button type="button" onclick="shareWhatsApp()" class="flex-1 py-2 px-2 rounded-full bg-olive-800 text-cream-100 text-xs font-semibold text-center border border-gold-400/40">
+      WhatsApp
+    </button>
+  </div>
+
+  <!-- Custom Toast Notification (No alert() used) -->
+  <div id="toast-message" role="status" aria-live="polite"
+       class="fixed bottom-16 sm:bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-3 transition-all duration-300 px-5 py-3 rounded-full bg-olive-900 text-cream-100 text-sm font-medium shadow-xl border border-gold-400/50 flex items-center gap-2 whitespace-nowrap">
+    <svg class="w-4 h-4 text-gold-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+    </svg>
+    <span id="toast-text">Copied to clipboard!</span>
+  </div>
+
+  <!-- ==================== INTERACTIVE JAVASCRIPT ==================== -->
+  <script>
+    // ==================== 1. WAX SEAL ENVELOPE REVEAL & PARTICLE CANVAS ====================
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class Particle {
+      constructor(burst = false, originX = canvas.width / 2, originY = canvas.height / 2) {
+        this.burst = burst;
+        if (burst) {
+          this.x = originX;
+          this.y = originY;
+          const angle = Math.random() * Math.PI * 2;
+          const speed = 3 + Math.random() * 8;
+          this.vx = Math.cos(angle) * speed;
+          this.vy = Math.sin(angle) * speed - 2;
+          this.gravity = 0.14;
+          this.life = 1;
+          this.decay = 0.012 + Math.random() * 0.01;
+        } else {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height - canvas.height;
+          this.vx = (Math.random() - 0.5) * 0.8;
+          this.vy = 0.6 + Math.random() * 1.1;
+          this.gravity = 0;
+          this.life = 0.65;
+          this.decay = 0;
+        }
+        this.size = 4 + Math.random() * 5;
+        this.rotation = Math.random() * Math.PI * 2;
+        this.rotSpeed = (Math.random() - 0.5) * 0.08;
+        const palette = ['#C5A059', '#E2C992', '#3D523E', '#FAF7F2', '#D3B26F'];
+        this.color = palette[Math.floor(Math.random() * palette.length)];
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        this.vy += this.gravity;
+        this.rotation += this.rotSpeed;
+
+        if (this.burst) {
+          this.life -= this.decay;
+        } else {
+          this.vx += Math.sin(this.y * 0.015) * 0.015;
+          if (this.y > canvas.height + 20) {
+            this.y = -15;
+            this.x = Math.random() * canvas.width;
+          }
+        }
+      }
+
+      draw() {
+        if (this.life <= 0) return;
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rotation);
+        ctx.globalAlpha = Math.max(0, this.life);
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        // Botanical petal shape
+        ctx.ellipse(0, 0, this.size, this.size * 0.52, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    // Seed gentle floating ambient petals
+    for (let i = 0; i < 22; i++) {
+      const p = new Particle(false);
+      p.y = Math.random() * canvas.height;
+      particles.push(p);
+    }
+
+    function spawnCelebrationBurst() {
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      for (let i = 0; i < 75; i++) {
+        particles.push(new Particle(true, cx, cy));
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles = particles.filter(p => !p.burst || p.life > 0);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    function openEnvelope() {
+      const overlay = document.getElementById('envelope-overlay');
+      if (!overlay || overlay.classList.contains('envelope-opened')) return;
+
+      overlay.classList.add('envelope-opened');
+      spawnCelebrationBurst();
+
+      // Trigger reveal animations for visible cards
+      setTimeout(() => {
+        document.querySelectorAll('.reveal-section').forEach((el, idx) => {
+          setTimeout(() => el.classList.add('is-visible'), idx * 140);
+        });
+      }, 250);
+    }
+
+    // ==================== 2. OPTIONAL WEB AUDIO CELEBRATORY CHIME TOGGLE ====================
+    let audioCtx = null;
+    let chimeInterval = null;
+    let isChimePlaying = false;
+
+    function playHarpNote(freq, duration = 1.6) {
+      if (!audioCtx) return;
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, now);
+
+      gain.gain.setValueAtTime(0.0001, now);
+      gain.gain.exponentialRampToValueAtTime(0.045, now + 0.06);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start(now);
+      osc.stop(now + duration);
+    }
+
+    function toggleAmbientChimes() {
+      const offIcon = document.getElementById('audio-icon-off');
+      const onIcon = document.getElementById('audio-icon-on');
+      const btn = document.getElementById('audio-toggle-btn');
+
+      if (!isChimePlaying) {
+        try {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (!audioCtx) {
+            audioCtx = new AudioContextClass();
+          }
+          if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+
+          // Pentatonic celebratory harp notes (C5, D5, E5, G5, A5, C6)
+          const notes = [523.25, 587.33, 659.25, 783.99, 880.00, 1046.50];
+          let step = 0;
+          playHarpNote(notes[0]);
+
+          chimeInterval = setInterval(() => {
+            step = (step + 1) % notes.length;
+            playHarpNote(notes[step]);
+          }, 950);
+
+          isChimePlaying = true;
+          offIcon.classList.add('hidden');
+          onIcon.classList.remove('hidden');
+          onIcon.classList.add('flex');
+          btn.setAttribute('aria-pressed', 'true');
+          showToast('Celebratory chimes enabled');
+        } catch (e) {
+          showToast('Audio not supported in this browser');
+        }
+      } else {
+        clearInterval(chimeInterval);
+        isChimePlaying = false;
+        onIcon.classList.add('hidden');
+        onIcon.classList.remove('flex');
+        offIcon.classList.remove('hidden');
+        btn.setAttribute('aria-pressed', 'false');
+        showToast('Chimes paused');
+      }
+    }
+
+    // ==================== 3. LIVE ANIMATED COUNTDOWN TIMER ====================
+    const weddingDate = new Date('2027-01-17T10:00:00+05:30').getTime();
+    let prevValues = { days: '', hours: '', mins: '', secs: '' };
+
+    function setTickValue(el, key, newVal) {
+      if (prevValues[key] !== newVal) {
+        el.textContent = newVal;
+        el.classList.remove('tick-animate');
+        void el.offsetWidth; // trigger reflow
+        el.classList.add('tick-animate');
+        prevValues[key] = newVal;
+      }
+    }
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
+
+      const daysEl = document.getElementById('cd-days');
+      const hoursEl = document.getElementById('cd-hours');
+      const minsEl = document.getElementById('cd-minutes');
+      const secsEl = document.getElementById('cd-seconds');
+
+      if (distance <= 0) {
+        daysEl.textContent = '00';
+        hoursEl.textContent = '00';
+        minsEl.textContent = '00';
+        secsEl.textContent = '00';
+        return;
+      }
+
+      const days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+      const hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+      const minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+      const seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
+
+      setTickValue(daysEl, 'days', days);
+      setTickValue(hoursEl, 'hours', hours);
+      setTickValue(minsEl, 'mins', minutes);
+      setTickValue(secsEl, 'secs', seconds);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ==================== 4. INTERACTIVE WALL OF BLESSINGS ====================
+    const STORAGE_KEY = 'jebin_sazid_blessings_v1';
+    const defaultBlessings = [
+      {
+        name: 'Sekendar Ali, Asiya Begum & Asif Iqbal',
+        relation: 'Bride’s Family • Ghoga, Nalbari',
+        wish: 'Assalamu Alaikum! We warmly welcome all our dear relatives, friends, and well-wishers to bless Jebin & Sazid as they begin this sacred journey together.',
+        time: 'Pinned Welcome'
+      }
+    ];
+
+    function loadBlessings() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+      } catch (e) {}
+      return defaultBlessings;
+    }
+
+    function saveBlessings(list) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      } catch (e) {}
+    }
+
+    function renderBlessings() {
+      const list = loadBlessings();
+      const container = document.getElementById('blessings-list');
+      const countEl = document.getElementById('blessing-count');
+
+      countEl.textContent = `${list.length} ${list.length === 1 ? 'Blessing' : 'Blessings'}`;
+      container.innerHTML = '';
+
+      list.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'p-4 rounded-2xl bg-cream-50 border border-gold-500/35 shadow-sm space-y-1.5';
+
+        const header = document.createElement('div');
+        header.className = 'flex items-center justify-between gap-2';
+
+        const nameWrap = document.createElement('div');
+        const nameEl = document.createElement('span');
+        nameEl.className = 'font-serif text-lg font-bold text-olive-900';
+        nameEl.textContent = item.name;
+        nameWrap.appendChild(nameEl);
+
+        if (item.relation) {
+          const relEl = document.createElement('span');
+          relEl.className = 'block sm:inline sm:ml-2 text-xs text-olive-600 font-medium';
+          relEl.textContent = `• ${item.relation}`;
+          nameWrap.appendChild(relEl);
+        }
+
+        const badge = document.createElement('span');
+        badge.className = 'text-[10px] font-semibold uppercase tracking-wider text-gold-700 bg-gold-200/50 px-2 py-0.5 rounded-full shrink-0';
+        badge.textContent = item.time || 'Blessed';
+
+        header.appendChild(nameWrap);
+        header.appendChild(badge);
+
+        const msgEl = document.createElement('p');
+        msgEl.className = 'text-sm text-olive-800 leading-relaxed';
+        msgEl.textContent = `“${item.wish}”`;
+
+        card.appendChild(header);
+        card.appendChild(msgEl);
+        container.appendChild(card);
+      });
+    }
+
+    function handleBlessingSubmit(event) {
+      event.preventDefault();
+      const nameInput = document.getElementById('guest-name');
+      const relInput = document.getElementById('guest-relation');
+      const wishInput = document.getElementById('guest-wish');
+
+      const name = nameInput.value.trim();
+      const relation = relInput.value.trim();
+      const wish = wishInput.value.trim();
+
+      if (!name || !wish) return;
+
+      const list = loadBlessings();
+      list.unshift({
+        name,
+        relation,
+        wish,
+        time: 'Just now'
+      });
+
+      saveBlessings(list);
+      renderBlessings();
+      spawnCelebrationBurst();
+
+      nameInput.value = '';
+      relInput.value = '';
+      wishInput.value = '';
+      showToast('Thank you! Your blessing has been posted.');
+    }
+
+    function sendWishToFamilyWhatsApp() {
+      const name = document.getElementById('guest-name').value.trim() || 'A Well-Wisher';
+      const wish = document.getElementById('guest-wish').value.trim() ||
+        'Assalamu Alaikum! Heartiest congratulations and warm duas for Jebin Sultana & Sazid Sahidur Rahman on their wedding!';
+
+      const message = [
+        '🌸 *Wedding Wishes for Jebin & Sazid* 🌸',
+        '',
+        `“${wish}”`,
+        '',
+        `— Warm regards, *${name}*`
+      ].join('\n');
+
+      window.open(`https://wa.me/916002562217?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    }
+
+    renderBlessings();
+
+    // ==================== 5. SAVE THE DATE (.ICS DOWNLOAD) ====================
+    function downloadICS() {
+      try {
+        const icsContent = [
+          'BEGIN:VCALENDAR',
+          'VERSION:2.0',
+          'PRODID:-//Jebin & Sazid Wedding Invitation//EN',
+          'CALSCALE:GREGORIAN',
+          'BEGIN:VEVENT',
+          'UID:jebin-sazid-wedding-20270117@invitation',
+          'DTSTAMP:20261124T045800Z',
+          'DTSTART;VALUE=DATE:20270117',
+          'DTEND;VALUE=DATE:20270118',
+          'SUMMARY:Marriage Ceremony: Jebin Sultana & Sazid Sahidur Rahman',
+          'DESCRIPTION:Assalamu Alaikum! Cordially hosted by Sekendar Ali (Father), Asiya Begum (Mother), and Asif Iqbal (Younger Brother). Contacts: +91 60025 62217, +91 60028 09755.',
+          'LOCATION:Own Residence, Village: Ghoga, Bus-Stand: Ghoga Chowk (Guwahati-Hajo-Daulasal Rd.), Dist.: Nalbari, Assam',
+          'STATUS:CONFIRMED',
+          'END:VEVENT',
+          'END:VCALENDAR'
+        ].join('\r\n');
+
+        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'Jebin_Sazid_Wedding_17Jan2027.ics');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+
+        showToast('Calendar event downloaded!');
+      } catch (err) {
+        showToast('Unable to download calendar file.');
+      }
+    }
+
+    // ==================== 6. SHARING & CLIPBOARD HELPERS ====================
+    function getEnglishInvitationText() {
+      const currentUrl = window.location.href.startsWith('http') ? window.location.href : '';
+      return [
+        '✨ *Cordial Wedding Invitation* ✨',
+        '_In the Name of Almighty, Most Beneficent, Most Merciful_',
+        '*Assalamu Alaikum*',
+        '',
+        'With the grace of Almighty Allah, *Sekendar Ali, Asiya Begum & Asif Iqbal* joyfully invite you and your family to grace the auspicious Marriage Ceremony of:',
+        '',
+        '💍 *Jebin Sultana* with *Sazid Sahidur Rahman*',
+        '',
+        '📅 *Date:* Sunday, 17 January 2027',
+        '📍 *Venue:* Own Residence, Village: Ghoga, Bus-Stand: Ghoga Chowk (Guwahati–Hajo–Daulasal Rd.), Dist.: Nalbari, Assam',
+        '📞 *Contact:* +91 60025 62217, +91 60028 09755',
+        '',
+        '_With best regards, Jebin Sultana & Family_',
+        currentUrl ? `\n🔗 View Interactive Card: ${currentUrl}` : ''
+      ].join('\n');
+    }
+
+    function shareWhatsApp() {
+      const text = getEnglishInvitationText();
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+    }
+
+    function copyInvitation() {
+      const text = getEnglishInvitationText();
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-9999px';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+
+      try {
+        document.execCommand('copy');
+        showToast('English invitation copied to clipboard!');
+      } catch (err) {
+        showToast('Could not copy invitation.');
+      }
+      document.body.removeChild(textArea);
+    }
+
+    let toastTimeout;
+    function showToast(message) {
+      const toast = document.getElementById('toast-message');
+      const toastText = document.getElementById('toast-text');
+      toastText.textContent = message;
+
+      toast.classList.remove('opacity-0', 'translate-y-3');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-3');
+      }, 3000);
+    }
+
+    // ==================== 7. INTERSECTION OBSERVER FOR SCROLL REVEALS ====================
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.reveal-section').forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>
